@@ -11,7 +11,6 @@ import java.time.LocalDate;
 import java.time.MonthDay;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class CarServiceTest {
     private static final LocalDate DATE = LocalDate.of(2024, 11, 2);
@@ -42,7 +41,7 @@ public class CarServiceTest {
     }
 
     @Test
-    @DisplayName("День, когда будет доставка устраивает")
+    @DisplayName("День, когда будет поставка, устраивает")
     public void DeliveryDaysPTest() {
         carService.setDeliveryDays(car, VALID_MONTH_DAY, VALID_MONTH_DAY);
 
@@ -50,7 +49,7 @@ public class CarServiceTest {
     }
 
     @Test
-    @DisplayName("День, когда будет поставка не устраивает")
+    @DisplayName("День, когда будет поставка, не устраивает")
     public void DeliveryDaysNTest() {
         carService.setDeliveryDays(car, VALID_MONTH_DAY, INVALID_MONTH_DAY);
 

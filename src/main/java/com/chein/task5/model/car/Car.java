@@ -12,8 +12,6 @@ public class Car {
 
     public Car(CarBrand carBrand) {
         this.carBrand = carBrand;
-        this.dispatchDate = dispatchDate;
-        this.deliveryDays = deliveryDays;
     }
 
     public void setBrand(CarBrand carBrand){

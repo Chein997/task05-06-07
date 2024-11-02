@@ -12,7 +12,7 @@ import java.util.Map;
 @Slf4j
 public class ShowroomService {
     private static Map<String, Showroom> showrooms =  new HashMap<>();;
-    private static final String ERROR_MESSAGE = "err";
+    private static final String ERROR_MESSAGE = "не в тот салон поставили";
 
     public ShowroomService(Map<String, Showroom> showrooms) {
         this.showrooms = showrooms;

@@ -59,7 +59,7 @@ public class ShowroomServiceTest {
     }
 
     @Test
-    @DisplayName("если какой-то дурик перепутал марки машин, и нам пришлось перегонять их")
+    @DisplayName("если какой-то не очень хороший чел перепутал марки машин и нам пришлось перегонять их")
     public void neTudaTest(){
         assertDoesNotThrow(() -> showroomService.bringCarToShowroom(
                 cars.get(2),
